@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Layout from '../components/common/Layout';
-import { Crown, Bot, Sparkles, Zap, Eye, Globe, Shield, ArrowRight } from 'lucide-react';
+import { Crown, ImageIcon, Sparkles, Wand2, Layers, Scissors, Palette, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import clsx from 'clsx';
@@ -53,52 +53,52 @@ export default function Premium() {
 
   const upcomingFeatures = [
     {
-      icon: Bot,
-      title: "Custom Personalities",
-      description: "Create unique AI personalities tailored to your server's needs and community culture",
-      color: "text-blue-500",
-      lightColor: "text-blue-600",
-      badgeType: "SOON"
+      icon: ImageIcon,
+      title: "Unlimited Image Generation",
+      description: "Generate unlimited high-quality images with Google's Gemini 2.5 Flash Image (Nano Banana) without rate limits",
+      color: "text-primary",
+      lightColor: "text-primary",
+      badgeType: "PRO"
     },
     {
       icon: Sparkles,
-      title: "Advanced AI Models",
-      description: "Access to the latest and most powerful AI models for enhanced conversations",
-      color: "text-purple-400",
-      lightColor: "text-purple-600",
-      badgeType: "SOON"
+      title: "Premium Resolution",
+      description: "Access to ultra-high resolution image generation up to 4K and beyond for professional quality results",
+      color: "text-secondary",
+      lightColor: "text-secondary",
+      badgeType: "PRO"
     },
     {
-      icon: Zap,
-      title: "Enhanced Performance",
-      description: "Faster response times and increased rate limits for premium subscribers",
+      icon: Wand2,
+      title: "Advanced Magic Tools",
+      description: "Exclusive access to cutting-edge AI tools like intelligent object removal and scene reconstruction",
+      color: "text-accent",
+      lightColor: "text-accent",
+      badgeType: "PREMIUM"
+    },
+    {
+      icon: Layers,
+      title: "Batch Processing",
+      description: "Process multiple images simultaneously with batch editing and bulk style transfers",
       color: "text-yellow-400",
       lightColor: "text-yellow-600",
-      badgeType: "SOON"
+      badgeType: "PRO"
     },
     {
-      icon: Eye,
-      title: "Advanced Vision",
-      description: "Enhanced image analysis and visual understanding capabilities",
-      color: "text-pink-400",
-      lightColor: "text-pink-600",
-      badgeType: "SOON"
-    },
-    {
-      icon: Globe,
-      title: "Extended Web Access",
-      description: "Unlimited web browsing and real-time information access",
-      color: "text-cyan-400",
-      lightColor: "text-cyan-600",
-      badgeType: "SOON"
-    },
-    {
-      icon: Shield,
-      title: "Priority Support",
-      description: "Get premium 24/7 support with faster response times and dedicated assistance",
+      icon: Scissors,
+      title: "Professional Editing",
+      description: "Access to professional-grade editing tools with precision control and advanced masking",
       color: "text-green-400",
       lightColor: "text-green-600",
-      badgeType: "SOON"
+      badgeType: "PRO"
+    },
+    {
+      icon: Palette,
+      title: "Custom Style Training",
+      description: "Train custom art styles from your own images and apply them to generate consistent branded content",
+      color: "text-orange-400",
+      lightColor: "text-orange-600",
+      badgeType: "PREMIUM"
     }
   ];
 
@@ -108,17 +108,17 @@ export default function Premium() {
     "px-8 py-3 h-12 sm:h-auto",
     "rounded-[10px]",
     "border-[3px] border-solid border-white/15",
-    "shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)]",
+    "shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)]",
     "transition-all duration-200 ease-out"
   );
 
   const primaryButtonClasses = clsx(
     buttonBaseClasses,
-    "bg-[#0055FF]",
+    "bg-[#8B5CF6]",
     "text-white"
   );
 
-  const hoverBoxShadow = "0px_8px_40px_0px_rgba(0,85,255,0.7), inset_0px_0px_10px_1px_rgba(255,255,255,0.3), 0px_0px_0px_5px_rgba(0,85,255,0.2)";
+  const hoverBoxShadow = "0px_8px_40px_0px_rgba(139,92,246,0.7), inset_0px_0px_10px_1px_rgba(255,255,255,0.3), 0px_0px_0px_5px_rgba(139,92,246,0.2)";
 
   if (!mounted) {
     return (
@@ -156,8 +156,8 @@ export default function Premium() {
                   className={clsx(
                     "relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden",
                     isDark 
-                      ? "bg-blue-950/50 backdrop-blur-lg border-blue-700/30"
-                      : "bg-blue-100/70 backdrop-blur-lg border-blue-300/50"
+                      ? "bg-primary/50 backdrop-blur-lg border-primary/30"
+                      : "bg-primary/70 backdrop-blur-lg border-primary/50"
                   )}
                   whileHover={{ scale: 1.05 }}
                 >
@@ -171,7 +171,7 @@ export default function Premium() {
                   <div
                     className="absolute bottom-0 left-0 right-0 h-0.5"
                     style={{
-                      background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+                      background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
                     }}
                   />
                 </motion.div>
@@ -193,8 +193,8 @@ export default function Premium() {
                   )}
                   variants={itemVariants}
                 >
-                  We're working hard to bring you premium features for {botName}. 
-                  Stay tuned for exciting updates and enhanced capabilities.
+                  We're developing premium image generation capabilities for {botName}. 
+                  Get ready for unlimited creation and professional-grade editing tools.
                 </motion.p>
               </motion.div>
 
@@ -207,12 +207,12 @@ export default function Premium() {
                     className={clsx(
                       "relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden",
                       isDark 
-                        ? "bg-blue-950/50 backdrop-blur-lg border-blue-700/30"
-                        : "bg-blue-100/70 backdrop-blur-lg border-blue-300/50"
+                        ? "bg-primary/50 backdrop-blur-lg border-primary/30"
+                        : "bg-primary/70 backdrop-blur-lg border-primary/50"
                     )}
                     variants={itemVariants}
                   >
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2.5"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mr-2.5"></span>
                     <span className={clsx(
                       "text-sm font-medium",
                       isDark ? "text-white/90" : "text-gray-800"
@@ -222,7 +222,7 @@ export default function Premium() {
                     <div
                       className="absolute bottom-0 left-0 right-0 h-0.5"
                       style={{
-                        background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+                        background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
                       }}
                     />
                   </motion.div>

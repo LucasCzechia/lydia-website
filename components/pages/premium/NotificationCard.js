@@ -66,7 +66,7 @@ const NotificationCard = ({
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-0.5"
         style={{
-          background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
+          background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
         }}
         animate={{
           opacity: [0.5, 1, 0.5]
@@ -207,7 +207,7 @@ const NotificationCard = ({
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         style={{ 
-          background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(139, 92, 246, 0) 100%)' 
+          background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 30%, rgb(6, 182, 212) 50%, rgb(139, 92, 246) 70%, rgba(139, 92, 246, 0) 100%)' 
         }}
       />
     </motion.div>

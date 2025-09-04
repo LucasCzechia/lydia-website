@@ -62,9 +62,9 @@ export default function AnimatedBackground({
         opacityLevel = 0.5;
     }
     
-    let primaryColor = "37, 99, 235";
-    let secondaryColor = "29, 78, 216";
-    let accentColor = "59, 130, 246";
+    let primaryColor = "139, 92, 246";
+    let secondaryColor = "6, 182, 212";
+    let accentColor = "244, 114, 182";
     
     if (theme === "dark") {
       primaryColor = "30, 41, 59";

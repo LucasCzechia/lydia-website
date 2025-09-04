@@ -94,7 +94,7 @@ export default function TestimonialSection() {
             <div
               className="absolute bottom-0 left-0 right-0 h-0.5"
               style={{
-                background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
+                background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
               }}
             ></div>
           </motion.div>

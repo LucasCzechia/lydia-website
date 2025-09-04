@@ -17,7 +17,7 @@ export default function TestimonialCard({ testimonial, index }) {
 
   const defaultUserSeed = testimonial.author || `User${index + 1}`;
   const defaultServerSeed = testimonial.community || `Server${index + 1}`;
-  const userAvatarBgColor = '0055ff';
+  const userAvatarBgColor = '8B5CF6';
   const serverIconBgColor = '777777';
   const bannerPlaceholderBgColor = userAvatarBgColor;
   const bannerPlaceholderTextColor = 'ffffff';
@@ -153,7 +153,7 @@ export default function TestimonialCard({ testimonial, index }) {
               }}
             >
               <div
-                className={`w-10 h-10 rounded-full overflow-hidden relative ${isDark ? 'ring-2 ring-blue-400/20' : 'ring-2 ring-blue-500/20'} transition-all duration-300`}
+                className={`w-10 h-10 rounded-full overflow-hidden relative ${isDark ? 'ring-2 ring-primary/20' : 'ring-2 ring-primary/30'} transition-all duration-300`}
               >
                 <Image
                   src={userPlaceholderImage}
@@ -168,7 +168,7 @@ export default function TestimonialCard({ testimonial, index }) {
             </motion.div>
             
             <div className="flex-1 min-w-0">
-              <p className={`font-semibold truncate ${isDark ? 'text-white group-hover:text-blue-200' : 'text-gray-900 group-hover:text-primary'} transition-colors duration-200`}>
+              <p className={`font-semibold truncate ${isDark ? 'text-white group-hover:text-secondary' : 'text-gray-900 group-hover:text-primary'} transition-colors duration-200`}>
                 {testimonial.author}
               </p>
               <p className={`text-sm truncate ${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-gray-600 group-hover:text-gray-700'} transition-colors duration-200`}>
@@ -227,8 +227,8 @@ export default function TestimonialCard({ testimonial, index }) {
           className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-[20px]"
           style={{ 
             background: isDark 
-              ? 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(139, 92, 246, 0) 100%)'
-              : 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(37, 99, 235) 50%, rgb(59, 130, 246) 70%, rgba(139, 92, 246, 0) 100%)'
+              ? 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 30%, rgb(6, 182, 212) 50%, rgb(139, 92, 246) 70%, rgba(139, 92, 246, 0) 100%)'
+              : 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 30%, rgb(6, 182, 212) 50%, rgb(139, 92, 246) 70%, rgba(139, 92, 246, 0) 100%)'
           }}
         />
 

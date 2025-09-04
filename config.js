@@ -7,7 +7,7 @@ const config = {
     name: botName,
     nameWithoutSymbol: botNameWithoutSymbol,
     version: "1.3.2",
-    tagline: `The most customizable Discord AI bot, built for the agentic era. Seamless integration, powerful features.`,
+    tagline: `Create and edit stunning images in Discord. Powered by Google's Gemini 2.5 Flash Image (Nano Banana).`,
     description: `Powerful AI Discord Bot powered by Google's ${aiModel} model. Smart conversation, powerful, and more!`,
     releaseDate: "2025-04-10",
     aiModel: aiModel

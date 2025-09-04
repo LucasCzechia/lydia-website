@@ -16,13 +16,13 @@ export default function FeatureCard({ feature }) {
   const getCardStyle = () => {
     return isDark
       ? {
-          background: 'linear-gradient(0.07deg, rgba(0, 85, 255, 0.15) 0%, rgba(97, 97, 97, 0.09) 100%)',
+          background: 'linear-gradient(0.07deg, rgba(139, 92, 246, 0.15) 0%, rgba(97, 97, 97, 0.09) 100%)',
           backdropFilter: 'blur(0px)',
           borderColor: 'rgba(255, 255, 255, 0.07)',
           boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.3)'
         }
       : {
-          background: 'linear-gradient(0.07deg, rgba(0, 85, 255, 0.05) 0%, rgba(240, 240, 240, 0.8) 100%)',
+          background: 'linear-gradient(0.07deg, rgba(139, 92, 246, 0.05) 0%, rgba(240, 240, 240, 0.8) 100%)',
           backdropFilter: 'blur(0px)',
           borderColor: 'rgba(0, 0, 0, 0.07)',
           boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.1)'
@@ -48,8 +48,8 @@ export default function FeatureCard({ feature }) {
               background: `linear-gradient(135deg, ${isDark ? feature.bgGradient : feature.lightBgGradient})`,
               border: isDark ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(0, 0, 0, 0.1)',
               boxShadow: isDark 
-                ? 'rgba(0, 85, 255, 0.25) 0px 4px 16px 0px' 
-                : 'rgba(0, 85, 255, 0.15) 0px 4px 16px 0px'
+                ? 'rgba(139, 92, 246, 0.25) 0px 4px 16px 0px' 
+                : 'rgba(139, 92, 246, 0.15) 0px 4px 16px 0px'
             }}
           >
             <Icon size={24} className={isDark ? feature.color : feature.lightColor} />
@@ -125,7 +125,7 @@ export default function FeatureCard({ feature }) {
 
       <div
         className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ background: `linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)` }}
+        style={{ background: `linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)` }}
       />
 
       <motion.div

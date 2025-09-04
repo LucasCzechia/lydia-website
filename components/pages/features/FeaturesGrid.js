@@ -1,141 +1,160 @@
 import { motion } from 'framer-motion';
 import FeatureCard from './FeatureCard';
 import { 
-  Bot, 
-  Eye, 
-  Mic, 
-  Globe, 
   ImageIcon, 
-  FileText, 
-  Languages
+  Edit, 
+  Users, 
+  Layers, 
+  Scissors, 
+  Palette, 
+  Sparkles, 
+  Wand2
 } from 'lucide-react';
 
 export default function FeaturesGrid({ variants }) {
   const features = [
     {
-      id: "personalities",
-      icon: Bot,
-      title: "Custom Personalities",
-      subtitle: "Tailored AI experiences",
-      description: "Create your own AI Discord chatbot with unique personalities, conversation styles, and specialized knowledge bases that perfectly match your server's community and needs.",
+      id: "generation",
+      icon: ImageIcon,
+      title: "AI Image Generation",
+      subtitle: "Create with Nano Banana",
+      description: "Generate stunning, high-quality images using Google's Gemini 2.5 Flash Image (Nano Banana). Simply describe what you want and watch your vision come to life in Discord.",
       color: "text-primary",
       lightColor: "text-primary",
-      bgGradient: "from-blue-500/20 to-blue-600/10",
-      lightBgGradient: "from-blue-500/10 to-blue-600/5",
-      badgeType: "PRO",
-      benefits: [
-        "Unlimited personality configurations",
-        "Custom knowledge bases",
-        "Community-specific responses",
-        "Role-based interactions"
-      ]
-    },
-    {
-      id: "vision",
-      icon: Eye,
-      title: "Vision Recognition",
-      subtitle: "See and understand visuals",
-      description: "Analyze and understand images, videos, and visual content with advanced AI vision capabilities. From memes to complex diagrams, Lylia sees it all.",
-      color: "text-purple-400",
-      lightColor: "text-purple-600",
       bgGradient: "from-purple-500/20 to-purple-600/10",
       lightBgGradient: "from-purple-500/10 to-purple-600/5",
-      badgeType: "NEW",
+      badgeType: "NANO BANANA",
       benefits: [
-        "Image content analysis",
-        "Video frame extraction",
-        "Visual question answering",
-        "Scene understanding"
+        "Text-to-image generation",
+        "Professional-grade quality",
+        "Multiple art styles",
+        "High-resolution outputs"
       ]
     },
     {
-      id: "audio",
-      icon: Mic,
-      title: "Audio Processing",
-      subtitle: "Hear and transcribe audio",
-      description: "Transcribe and comprehend voice messages and audio files with high accuracy. Perfect for accessibility and creating searchable audio archives.",
+      id: "editing",
+      icon: Edit,
+      title: "Advanced Image Editing",
+      subtitle: "Transform with natural language",
+      description: "Edit images using simple text commands. Remove backgrounds, change colors, add objects, alter lighting, and make professional-grade adjustments effortlessly.",
+      color: "text-secondary",
+      lightColor: "text-secondary",
+      bgGradient: "from-cyan-500/20 to-cyan-600/10",
+      lightBgGradient: "from-cyan-500/10 to-cyan-600/5",
+      badgeType: "PRO",
+      benefits: [
+        "Natural language editing",
+        "Background removal/replacement",
+        "Color and lighting adjustments",
+        "Object manipulation"
+      ]
+    },
+    {
+      id: "consistency",
+      icon: Users,
+      title: "Character Consistency",
+      subtitle: "Maintain visual continuity",
+      description: "Keep characters and objects consistent across multiple images and edits. Perfect for storytelling, content creation, and maintaining visual brand identity.",
+      color: "text-accent",
+      lightColor: "text-accent",
+      bgGradient: "from-pink-500/20 to-pink-600/10",
+      lightBgGradient: "from-pink-500/10 to-pink-600/5",
+      badgeType: "NEW",
+      benefits: [
+        "Character preservation",
+        "Cross-image continuity",
+        "Brand consistency",
+        "Story development"
+      ]
+    },
+    {
+      id: "blending",
+      icon: Layers,
+      title: "Multi-Image Blending",
+      subtitle: "Combine multiple references",
+      description: "Upload multiple reference images and blend them together to create entirely new compositions. Combine elements from different sources seamlessly.",
       color: "text-green-400",
       lightColor: "text-green-600",
       bgGradient: "from-green-500/20 to-green-600/10",
       lightBgGradient: "from-green-500/10 to-green-600/5",
       badgeType: "NEW",
       benefits: [
-        "Voice message transcription",
-        "Audio file processing",
-        "Multiple language support",
-        "Real-time audio analysis"
+        "Multiple reference support",
+        "Seamless composition",
+        "Element extraction",
+        "Scene reconstruction"
       ]
     },
     {
-      id: "browsing",
-      icon: Globe,
-      title: "Internet Browsing",
-      subtitle: "Real-time web access",
-      description: "Search and summarize web content in real-time. Get the latest information, news, and data directly in your Discord conversations.",
-      color: "text-cyan-400",
-      lightColor: "text-cyan-600",
-      bgGradient: "from-cyan-500/20 to-cyan-600/10",
-      lightBgGradient: "from-cyan-500/10 to-cyan-600/5",
-      badgeType: "NEW",
-      benefits: [
-        "Real-time web searches",
-        "Content summarization",
-        "News and updates",
-        "Research assistance"
-      ]
-    },
-    {
-      id: "generation",
-      icon: ImageIcon,
-      title: "Image Generation",
-      subtitle: "Create stunning visuals",
-      description: "Create custom AI-generated images from text descriptions. Bring your imagination to life with high-quality, creative visuals tailored to your needs.",
-      color: "text-pink-400",
-      lightColor: "text-pink-600",
-      bgGradient: "from-pink-500/20 to-pink-600/10",
-      lightBgGradient: "from-pink-500/10 to-pink-600/5",
-      badgeType: "NEW",
-      benefits: [
-        "Text-to-image generation",
-        "Multiple art styles",
-        "High-resolution outputs",
-        "Creative concepts"
-      ]
-    },
-    {
-      id: "analysis",
-      icon: FileText,
-      title: "Text Analysis",
-      subtitle: "Deep content understanding",
-      description: "Process and understand documents, code, and complex text with advanced natural language processing. Perfect for document analysis and code reviews.",
+      id: "background",
+      icon: Scissors,
+      title: "Background Magic",
+      subtitle: "Remove, replace, enhance",
+      description: "Automatically remove backgrounds, replace them with new scenes, or enhance existing backgrounds with advanced AI precision and natural blending.",
       color: "text-orange-400",
       lightColor: "text-orange-600",
       bgGradient: "from-orange-500/20 to-orange-600/10",
       lightBgGradient: "from-orange-500/10 to-orange-600/5",
-      badgeType: "NEW",
+      badgeType: "PRO",
       benefits: [
-        "Document processing",
-        "Code analysis",
-        "Sentiment analysis",
-        "Content extraction"
+        "Auto background removal",
+        "Scene replacement",
+        "Natural edge blending",
+        "Environment enhancement"
       ]
     },
     {
-      id: "multilingual",
-      icon: Languages,
-      title: "Multilingual",
-      subtitle: "Global communication",
-      description: "Communicate fluently in various languages with natural translation and conversation capabilities. Break down language barriers in your community.",
-      color: "text-red-400",
-      lightColor: "text-red-600",
-      bgGradient: "from-red-500/20 to-red-600/10",
-      lightBgGradient: "from-red-500/10 to-red-600/5",
+      id: "style",
+      icon: Palette,
+      title: "Style Transfer",
+      subtitle: "Apply artistic styles",
+      description: "Transform images with different artistic styles, from photorealistic to cartoon, watercolor to digital art. Apply any visual aesthetic to your images.",
+      color: "text-purple-400",
+      lightColor: "text-purple-600",
+      bgGradient: "from-purple-500/20 to-purple-600/10",
+      lightBgGradient: "from-purple-500/10 to-purple-600/5",
       badgeType: "NEW",
       benefits: [
-        "100+ languages supported",
-        "Natural translations",
-        "Cultural context awareness",
-        "Real-time communication"
+        "Multiple art styles",
+        "Style customization",
+        "Aesthetic transformation",
+        "Creative flexibility"
+      ]
+    },
+    {
+      id: "enhancement",
+      icon: Sparkles,
+      title: "Image Enhancement",
+      subtitle: "Improve quality and details",
+      description: "Enhance image quality, increase resolution, improve lighting, sharpen details, and restore old or low-quality images to professional standards.",
+      color: "text-yellow-400",
+      lightColor: "text-yellow-600",
+      bgGradient: "from-yellow-500/20 to-yellow-600/10",
+      lightBgGradient: "from-yellow-500/10 to-yellow-600/5",
+      badgeType: "PRO",
+      benefits: [
+        "Quality enhancement",
+        "Resolution upscaling",
+        "Detail sharpening",
+        "Restoration capabilities"
+      ]
+    },
+    {
+      id: "magic",
+      icon: Wand2,
+      title: "AI Magic Tools",
+      subtitle: "Intelligent automation",
+      description: "Access a suite of intelligent tools that automatically detect and fix common image issues, suggest improvements, and apply smart enhancements.",
+      color: "text-indigo-400",
+      lightColor: "text-indigo-600",
+      bgGradient: "from-indigo-500/20 to-indigo-600/10",
+      lightBgGradient: "from-indigo-500/10 to-indigo-600/5",
+      badgeType: "NEW",
+      benefits: [
+        "Smart auto-corrections",
+        "Intelligent suggestions",
+        "One-click improvements",
+        "Automated optimization"
       ]
     }
   ];
@@ -151,7 +170,6 @@ export default function FeaturesGrid({ variants }) {
       }
     }
   };
-
   return (
     <motion.div
       variants={variants}

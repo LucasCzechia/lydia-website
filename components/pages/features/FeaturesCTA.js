@@ -18,8 +18,8 @@ export default function FeaturesCTA({ variants }) {
       className="relative max-w-3xl mx-auto rounded-[20px] p-8 md:p-12 text-center overflow-hidden border"
       style={{
         background: isDark 
-          ? 'linear-gradient(0.07deg, rgba(0, 85, 255, 0.2) 0%, rgba(97, 97, 97, 0.15) 100%)'
-          : 'linear-gradient(0.07deg, rgba(0, 85, 255, 0.08) 0%, rgba(240, 240, 240, 0.9) 100%)',
+          ? 'linear-gradient(0.07deg, rgba(139, 92, 246, 0.2) 0%, rgba(97, 97, 97, 0.15) 100%)'
+          : 'linear-gradient(0.07deg, rgba(139, 92, 246, 0.08) 0%, rgba(240, 240, 240, 0.9) 100%)',
         backdropFilter: 'blur(10px)',
         borderColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
         boxShadow: isDark 
@@ -56,7 +56,7 @@ export default function FeaturesCTA({ variants }) {
           <div
             className="absolute bottom-0 left-0 right-0 h-0.5"
             style={{
-              background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
+              background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
             }}
           />
         </motion.div>
@@ -72,7 +72,7 @@ export default function FeaturesCTA({ variants }) {
           "text-lg mb-8 max-w-2xl mx-auto",
           isDark ? "text-white/80" : "text-gray-700"
         )}>
-          Join thousands of communities already using {botName} to enhance their Discord experience with cutting-edge AI capabilities.
+          Join Discord communities using {botName} for professional-grade image generation and editing with Gemini 2.5 Flash Image technology.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

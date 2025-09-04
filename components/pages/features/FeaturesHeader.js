@@ -30,7 +30,7 @@ export default function FeaturesHeader({ variants }) {
         <div
           className="absolute bottom-0 left-0 right-0 h-0.5"
           style={{
-            background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
+            background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
           }}
         />
       </motion.div>
@@ -52,7 +52,7 @@ export default function FeaturesHeader({ variants }) {
         )}
         variants={variants}
       >
-        Discover the comprehensive AI capabilities that make {botName} the most advanced Discord bot for your community.
+        Discover the powerful image generation and editing capabilities powered by Google's Gemini 2.5 Flash Image (Nano Banana) technology.
       </motion.p>
     </div>
   );

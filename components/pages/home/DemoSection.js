@@ -118,7 +118,7 @@ export default function DemoSection() {
               <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-red-500 mr-1 md:mr-2"></div>
               <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-yellow-500 mr-1 md:mr-2"></div>
               <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500 mr-2 md:mr-4"></div>
-              <span className="text-blue-400 text-sm md:text-base font-medium">Lydia Demo</span>
+              <span className="text-blue-400 text-sm md:text-base font-medium">Lylia Demo</span>
             </div>
 
             <div className="relative md:aspect-video overflow-hidden flex items-center justify-center bg-gradient-to-b from-gray-900 to-black rounded-b-[20px] md:rounded-b-[30px] p-4 md:p-8">
@@ -173,7 +173,7 @@ export default function DemoSection() {
                 </h3>
                 
                 <p className="text-sm md:text-base text-gray-300 mb-4 md:mb-6">
-                  Our interactive demo is being prepared to showcase the full capabilities of Lydia. Be among the first to try it!
+                  Our interactive demo is being prepared to showcase the full capabilities of Lylia. Be among the first to try it!
                 </p>
                 
                 <div className="inline-flex items-center px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-blue-500/50 bg-blue-600/20 text-xs md:text-sm text-blue-300">

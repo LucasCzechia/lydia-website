@@ -103,7 +103,7 @@ const showUpdateNotification = () => {
   // Simple browser notification
   if ('Notification' in window && Notification.permission === 'granted') {
     new Notification('App Update Available', {
-      body: 'A new version of Lydia is available. Refresh to update.',
+      body: 'A new version of Lylia is available. Refresh to update.',
       icon: '/images/favicon/android-chrome-192x192.png',
       tag: 'app-update'
     });

@@ -24,13 +24,13 @@ export function getConfig(path, fallback = undefined) {
 
 export function getPageTitle(pageName = '') {
   try {
-    if (!config || !config.bot) return 'Lydia';
+    if (!config || !config.bot) return 'Lylia';
     
     return pageName 
       ? getConfig(`meta.pageTitles.${pageName}`, `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - ${config.bot.name}`)
       : getConfig('meta.title', config.bot.name);
   } catch (error) {
-    return 'Lydia';
+    return 'Lylia';
   }
 }
 
@@ -60,10 +60,10 @@ export function getSocialLink(platform) {
 export function getBotName(includeSymbol = true) {
   try {
     return includeSymbol 
-      ? getConfig('bot.name', 'Lydia')
-      : getConfig('bot.nameWithoutSymbol', 'Lydia');
+      ? getConfig('bot.name', 'Lylia')
+      : getConfig('bot.nameWithoutSymbol', 'Lylia');
   } catch (error) {
-    return includeSymbol ? 'Lydia' : 'Lydia';
+    return includeSymbol ? 'Lylia' : 'Lylia';
   }
 }
 

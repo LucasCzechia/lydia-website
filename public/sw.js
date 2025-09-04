@@ -244,7 +244,7 @@ function createOfflinePage() {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Offline - Lydia</title>
+        <title>Offline - Lylia</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>

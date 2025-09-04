@@ -222,7 +222,7 @@ export default function MobileNav() {
               >
                 <Image 
                   src={logoPath} 
-                  alt={getConfig('branding.images.logoAlt', 'Lydia Logo')} 
+                  alt={getConfig('branding.images.logoAlt', 'Lylia Logo')} 
                   width={36}
                   height={36}
                   className="rounded-full"

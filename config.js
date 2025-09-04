@@ -1,5 +1,5 @@
-const botName = "Lydia";
-const botNameWithoutSymbol = "Lydia";
+const botName = "Lylia";
+const botNameWithoutSymbol = "Lylia";
 const aiModel = "Gemini 2.5 Flash";
 
 const config = {

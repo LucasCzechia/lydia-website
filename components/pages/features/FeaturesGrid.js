@@ -35,7 +35,7 @@ export default function FeaturesGrid({ variants }) {
       icon: Eye,
       title: "Vision Recognition",
       subtitle: "See and understand visuals",
-      description: "Analyze and understand images, videos, and visual content with advanced AI vision capabilities. From memes to complex diagrams, Lydia sees it all.",
+      description: "Analyze and understand images, videos, and visual content with advanced AI vision capabilities. From memes to complex diagrams, Lylia sees it all.",
       color: "text-purple-400",
       lightColor: "text-purple-600",
       bgGradient: "from-purple-500/20 to-purple-600/10",

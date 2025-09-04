@@ -27,22 +27,22 @@ export default function SectionHeader({
       <motion.div
         className="relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden backdrop-blur-lg"
         style={{
-          backgroundColor: isDark ? 'rgba(30, 58, 138, 0.5)' : 'rgba(219, 234, 254, 0.9)',
-          borderColor: isDark ? 'rgba(59, 130, 246, 0.3)' : 'rgba(59, 130, 246, 0.6)'
+          backgroundColor: isDark ? 'rgba(139, 92, 246, 0.5)' : 'rgba(248, 247, 255, 0.9)',
+          borderColor: isDark ? 'rgba(139, 92, 246, 0.3)' : 'rgba(139, 92, 246, 0.6)'
         }}
         variants={variants}
       >
-        <span className="w-2 h-2 bg-blue-500 rounded-full mr-2.5"></span>
+        <span className="w-2 h-2 bg-primary rounded-full mr-2.5"></span>
         <span 
           className="text-sm font-medium"
-          style={{ color: isDark ? 'rgba(255, 255, 255, 0.9)' : 'rgb(30, 64, 175)' }}
+          style={{ color: isDark ? 'rgba(255, 255, 255, 0.9)' : 'rgb(139, 92, 246)' }}
         >
           {tagline}
         </span>
         <div
           className="absolute bottom-0 left-0 right-0 h-0.5"
           style={{
-            background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+            background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
           }}
         ></div>
       </motion.div>

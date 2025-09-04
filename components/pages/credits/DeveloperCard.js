@@ -20,7 +20,7 @@ export default function DeveloperCard({ developer, isDark }) {
       case 'linkedin':
         return {
           icon: 'linkedin',
-          class: "text-blue-600 dark:text-blue-400"
+          class: "text-primary dark:text-secondary"
         };
       case 'discord':
         return {
@@ -151,7 +151,7 @@ export default function DeveloperCard({ developer, isDark }) {
                       className={clsx(
                         "flex items-center space-x-1 px-2 py-1 text-xs rounded border transition-colors",
                         isDark 
-                          ? "bg-card-hover border-gray-700/60 hover:border-blue-500/30" 
+                          ? "bg-card-hover border-gray-700/60 hover:border-primary/30" 
                           : "bg-gray-100/80 border-gray-300/60 hover:border-blue-400/30",
                         iconColorClass
                       )}

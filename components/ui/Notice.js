@@ -38,25 +38,25 @@ export default function Notice({
     "px-8 py-3 h-12 sm:h-auto",
     "rounded-[10px]",
     "border-[3px] border-solid border-white/15",
-    "shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)]",
+    "shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)]",
     "transition-all duration-200 ease-out"
   );
 
   const primaryButtonClasses = clsx(
     buttonBaseClasses,
-    "bg-[#0055FF]",
+    "bg-primary",
     "text-white"
   );
 
-  const hoverBoxShadow = "0px 8px 40px 0px rgba(0,85,255,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px 5px rgba(0,85,255,0.2)";
+  const hoverBoxShadow = "0px 8px 40px 0px rgba(139,92,246,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px 5px rgba(139,92,246,0.2)";
 
   return (
     <section className="py-12 md:py-20 px-4 md:px-0">
       <motion.div 
-        className="max-w-lg mx-auto rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-2xl border border-blue-900/30 group cursor-pointer"
+        className="max-w-lg mx-auto rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-2xl border border-primary/30 group cursor-pointer"
         whileHover={{
           scale: 1.02,
-          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(59, 130, 246, 0.3)",
+          boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(139, 92, 246, 0.3)",
           transition: { duration: 0.3, ease: "easeOut" }
         }}
         whileTap={{ scale: 0.98 }}
@@ -102,7 +102,7 @@ export default function Notice({
               style={{
                 border: '1px solid rgba(255, 255, 255, 0.05)',
                 backdropFilter: 'blur(2.5px)',
-                background: 'linear-gradient(0.07deg, rgba(0, 85, 255, 0.08) 0%, rgba(153, 153, 153, 0.1) 100%)',
+                background: 'linear-gradient(0.07deg, rgba(139, 92, 246, 0.08) 0%, rgba(153, 153, 153, 0.1) 100%)',
                 borderRadius: '10px',
                 opacity: 1,
                 padding: '6px 14px',
@@ -166,7 +166,7 @@ export default function Notice({
                 className="framer-1ahrcnp"
                 data-framer-name="Blue Line"
                 style={{
-                  background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)',
+                  background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)',
                   willChange: 'transform',
                   opacity: 1,
                   position: 'absolute',
@@ -197,7 +197,7 @@ export default function Notice({
             }}
           >
              <h2
-              className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-1 group-hover:text-blue-100 transition-colors duration-300"
+              className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-1 group-hover:text-violet-100 transition-colors duration-300"
               style={{ textAlign: 'center' }}
             >
               {title}
@@ -277,7 +277,7 @@ export default function Notice({
         <motion.div
           className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           style={{ 
-            background: 'linear-gradient(90deg, rgba(59, 130, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(59, 130, 246, 0) 100%)' 
+            background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 30%, rgb(6, 182, 212) 50%, rgb(244, 114, 182) 70%, rgba(139, 92, 246, 0) 100%)' 
           }}
         />
       </motion.div>

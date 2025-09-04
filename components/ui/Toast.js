@@ -33,17 +33,17 @@ const TOAST_TYPES = {
   },
   info: {
     icon: Info,
-    iconColor: 'text-blue-500',
-    progressColor: 'bg-blue-500',
-    border: 'border-blue-500/30',
-    progressShadow: 'rgba(96, 165, 250, 0.4)'
+    iconColor: 'text-secondary',
+    progressColor: 'bg-secondary',
+    border: 'border-secondary/30',
+    progressShadow: 'rgba(6, 182, 212, 0.4)'
   }
 };
 
 const BASE_BG_COLOR_DARK = 'rgba(17, 17, 17, 0.9)';
 const BASE_BG_COLOR_LIGHT = 'rgba(245, 245, 245, 0.9)';
-const BASE_SHADOW = '0 4px 12px rgba(37, 99, 235, 0.15)';
-const BASE_GLOW_GRADIENT = 'radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.1) 0%, transparent 70%), radial-gradient(circle at 75% 75%, rgba(29, 78, 216, 0.1) 0%, transparent 70%)';
+const BASE_SHADOW = '0 4px 12px rgba(139, 92, 246, 0.15)';
+const BASE_GLOW_GRADIENT = 'radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.1) 0%, transparent 70%), radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.1) 0%, transparent 70%)';
 
 export function ToastProvider({ children }) {
   const [toast, setToast] = useState(null);
@@ -128,7 +128,7 @@ export function ToastProvider({ children }) {
                     {React.createElement(currentToastType.icon, {
                       size: 18,
                       strokeWidth: 2.5,
-                      style: { filter: 'drop-shadow(0 0 2px rgba(59, 130, 246, 0.5))' }
+                      style: { filter: 'drop-shadow(0 0 2px rgba(139, 92, 246, 0.5))' }
                     })}
                   </div>
 

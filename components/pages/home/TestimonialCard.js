@@ -48,15 +48,15 @@ export default function TestimonialCard({ testimonial, index }) {
     if (isDark) {
       return {
         background: 'linear-gradient(145deg, rgba(17, 24, 39, 0.9) 0%, rgba(31, 41, 55, 0.7) 50%, rgba(17, 24, 39, 1) 100%)',
-        border: '1px solid rgba(59, 130, 246, 0.4)',
-        boxShadow: '0 12px 48px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(59, 130, 246, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.08)',
+        border: '1px solid rgba(139, 92, 246, 0.4)',
+        boxShadow: '0 12px 48px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(139, 92, 246, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.08)',
         transform: 'translateY(-4px) scale(1.02)'
       };
     } else {
       return {
         background: 'linear-gradient(145deg, rgba(255, 255, 255, 1) 0%, rgba(249, 250, 251, 0.95) 50%, rgba(243, 244, 246, 1) 100%)',
-        border: '1px solid rgba(59, 130, 246, 0.25)',
-        boxShadow: '0 16px 64px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(59, 130, 246, 0.08), inset 0 1px 0 rgba(255, 255, 255, 1)',
+        border: '1px solid rgba(139, 92, 246, 0.25)',
+        boxShadow: '0 16px 64px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(139, 92, 246, 0.08), inset 0 1px 0 rgba(255, 255, 255, 1)',
         transform: 'translateY(-4px) scale(1.02)'
       };
     }
@@ -168,7 +168,7 @@ export default function TestimonialCard({ testimonial, index }) {
             </motion.div>
             
             <div className="flex-1 min-w-0">
-              <p className={`font-semibold truncate ${isDark ? 'text-white group-hover:text-blue-200' : 'text-gray-900 group-hover:text-blue-700'} transition-colors duration-200`}>
+              <p className={`font-semibold truncate ${isDark ? 'text-white group-hover:text-blue-200' : 'text-gray-900 group-hover:text-primary'} transition-colors duration-200`}>
                 {testimonial.author}
               </p>
               <p className={`text-sm truncate ${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-gray-600 group-hover:text-gray-700'} transition-colors duration-200`}>
@@ -227,8 +227,8 @@ export default function TestimonialCard({ testimonial, index }) {
           className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-[20px]"
           style={{ 
             background: isDark 
-              ? 'linear-gradient(90deg, rgba(59, 130, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(59, 130, 246, 0) 100%)'
-              : 'linear-gradient(90deg, rgba(59, 130, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(37, 99, 235) 50%, rgb(59, 130, 246) 70%, rgba(59, 130, 246, 0) 100%)'
+              ? 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(139, 92, 246, 0) 100%)'
+              : 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(37, 99, 235) 50%, rgb(59, 130, 246) 70%, rgba(139, 92, 246, 0) 100%)'
           }}
         />
 
@@ -236,8 +236,8 @@ export default function TestimonialCard({ testimonial, index }) {
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-[20px]"
           style={{
             background: isDark
-              ? 'radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 70%)'
-              : 'radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 70%)'
+              ? 'radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 70%)'
+              : 'radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.03) 0%, transparent 70%)'
           }}
         />
       </div>

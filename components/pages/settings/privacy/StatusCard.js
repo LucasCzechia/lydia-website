@@ -36,13 +36,13 @@ export default function StatusCard({
     "border-[2px] border-solid",
     "transition-all duration-200 ease-out",
     isDark 
-      ? "bg-[#0055FF] border-white/15 text-white shadow-[0px_4px_20px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)]" 
-      : "bg-[#0055FF] border-blue-400/20 text-white shadow-[0px_4px_20px_0px_rgba(0,85,255,0.3),0px_0px_0px_1px_rgba(0,85,255,0.1)]"
+      ? "bg-[#8B5CF6] border-white/15 text-white shadow-[0px_4px_20px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)]" 
+      : "bg-[#8B5CF6] border-blue-400/20 text-white shadow-[0px_4px_20px_0px_rgba(139,92,246,0.3),0px_0px_0px_1px_rgba(139,92,246,0.1)]"
   );
   
   const hoverBoxShadow = isDark
-    ? "0px 8px 30px 0px rgba(0,85,255,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px 3px rgba(0,85,255,0.2)"
-    : "0px 8px 30px 0px rgba(0,85,255,0.5), inset 0px 0px 5px 1px rgba(255,255,255,0.5), 0px 0px 0px 3px rgba(0,85,255,0.2)";
+    ? "0px 8px 30px 0px rgba(139,92,246,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px 3px rgba(139,92,246,0.2)"
+    : "0px 8px 30px 0px rgba(139,92,246,0.5), inset 0px 0px 5px 1px rgba(255,255,255,0.5), 0px 0px 0px 3px rgba(139,92,246,0.2)";
 
   return (
     <motion.div
@@ -65,14 +65,14 @@ export default function StatusCard({
           className={clsx(
             "flex items-center justify-between p-4 rounded-xl mb-3 border transition-colors",
             isDark 
-              ? "bg-blue-900/20 border-blue-500/20 hover:border-blue-500/40" 
-              : "bg-blue-50 border-blue-200 hover:border-blue-300"
+              ? "bg-primary/20 border-primary/20 hover:border-primary/40" 
+              : "bg-blue-50 border-blue-200 hover:border-primary"
           )}
           whileHover={{ scale: 1.01 }}
         >
           <div className="flex items-center">
             {analyticsEnabled ? (
-              <Eye size={18} className="text-blue-500 mr-3" />
+              <Eye size={18} className="text-primary mr-3" />
             ) : (
               <EyeOff size={18} className={isDark ? "text-gray-500 mr-3" : "text-gray-600 mr-3"} />
             )}
@@ -86,7 +86,7 @@ export default function StatusCard({
               <span className={clsx(
                 "ml-1.5 text-sm font-medium",
                 analyticsEnabled 
-                  ? "text-blue-500" 
+                  ? "text-primary" 
                   : isDark ? "text-gray-500" : "text-gray-600"
               )}>
                 {analyticsEnabled ? "Enabled" : "Disabled"}
@@ -99,7 +99,7 @@ export default function StatusCard({
               className={clsx(
                 "relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none",
                 analyticsEnabled 
-                  ? "bg-blue-500" 
+                  ? "bg-primary" 
                   : isDark ? "bg-gray-600" : "bg-gray-300"
               )}
               role="switch"
@@ -121,14 +121,14 @@ export default function StatusCard({
           className={clsx(
             "flex items-center justify-between p-4 rounded-xl mb-4 border transition-colors",
             isDark 
-              ? "bg-blue-900/20 border-blue-500/20 hover:border-blue-500/40" 
-              : "bg-blue-50 border-blue-200 hover:border-blue-300"
+              ? "bg-primary/20 border-primary/20 hover:border-primary/40" 
+              : "bg-blue-50 border-blue-200 hover:border-primary"
           )}
           whileHover={{ scale: 1.01 }}
         >
           <div className="flex items-center">
             {preferencesEnabled ? (
-              <SettingsIcon size={18} className="text-blue-500 mr-3" />
+              <SettingsIcon size={18} className="text-primary mr-3" />
             ) : (
               <SettingsIcon size={18} className={isDark ? "text-gray-500 mr-3" : "text-gray-600 mr-3"} />
             )}
@@ -142,7 +142,7 @@ export default function StatusCard({
               <span className={clsx(
                 "ml-1.5 text-sm font-medium",
                 preferencesEnabled 
-                  ? "text-blue-500" 
+                  ? "text-primary" 
                   : isDark ? "text-gray-500" : "text-gray-600"
               )}>
                 {preferencesEnabled ? "Enabled" : "Disabled"}
@@ -155,7 +155,7 @@ export default function StatusCard({
               className={clsx(
                 "relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none",
                 preferencesEnabled 
-                  ? "bg-blue-500" 
+                  ? "bg-primary" 
                   : isDark ? "bg-gray-600" : "bg-gray-300"
               )}
               role="switch"

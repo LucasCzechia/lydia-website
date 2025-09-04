@@ -31,8 +31,8 @@ export default function FeaturesCTA({ variants }) {
         className="absolute inset-0 opacity-20"
         style={{
           background: isDark
-            ? 'radial-gradient(circle at 30% 40%, rgba(37, 99, 235, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(29, 78, 216, 0.2) 0%, transparent 50%)'
-            : 'radial-gradient(circle at 30% 40%, rgba(37, 99, 235, 0.15) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(29, 78, 216, 0.1) 0%, transparent 50%)'
+            ? 'radial-gradient(circle at 30% 40%, rgba(139, 92, 246, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.2) 0%, transparent 50%)'
+            : 'radial-gradient(circle at 30% 40%, rgba(139, 92, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.1) 0%, transparent 50%)'
         }}
       />
 
@@ -41,8 +41,8 @@ export default function FeaturesCTA({ variants }) {
           className={clsx(
             "inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden backdrop-blur-lg",
             isDark 
-              ? "bg-blue-950/50 border-blue-700/30"
-              : "bg-blue-100/70 border-blue-300/50"
+              ? "bg-primary/50 border-primary/30"
+              : "bg-primary/70 border-primary/50"
           )}
           whileHover={{ scale: 1.05 }}
         >
@@ -56,7 +56,7 @@ export default function FeaturesCTA({ variants }) {
           <div
             className="absolute bottom-0 left-0 right-0 h-0.5"
             style={{
-              background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+              background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
             }}
           />
         </motion.div>
@@ -78,9 +78,9 @@ export default function FeaturesCTA({ variants }) {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href={inviteUrl} passHref legacyBehavior>
             <motion.a
-              className="inline-flex items-center justify-center text-base font-medium px-8 py-3 rounded-[10px] border-[3px] border-solid border-white/15 bg-[#0055FF] text-white shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)] transition-all duration-200 ease-out"
+              className="inline-flex items-center justify-center text-base font-medium px-8 py-3 rounded-[10px] border-[3px] border-solid border-white/15 bg-[#8B5CF6] text-white shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)] transition-all duration-200 ease-out"
               whileHover={{
-                boxShadow: "0px 8px 40px 0px rgba(0,85,255,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px_5px_rgba(0,85,255,0.2)",
+                boxShadow: "0px 8px 40px 0px rgba(139,92,246,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px_5px_rgba(139,92,246,0.2)",
                 scale: 1.02
               }}
               whileTap={{ scale: 0.98 }}

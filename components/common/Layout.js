@@ -198,7 +198,7 @@ export default function Layout({ children, title, description }) {
         <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
 
         {/* Theme colors */}
-        <meta name="theme-color" content={getConfig('branding.colors.primary', '#2563EB')} />
+        <meta name="theme-color" content={getConfig('branding.colors.primary', '#8B5CF6')} />
         <meta name="theme-color" content="#000814" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
@@ -294,7 +294,7 @@ export default function Layout({ children, title, description }) {
       {/* Skip to content link for accessibility */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-md focus:shadow-lg"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-md focus:shadow-lg"
         tabIndex="1"
       >
         Skip to main content

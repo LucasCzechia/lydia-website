@@ -57,19 +57,19 @@ const Button = forwardRef(({
   // Variant styles
   const variantClasses = {
     primary: clsx(
-      'bg-[#0055FF] text-white border-[3px] border-solid border-white/15',
-      'shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)]',
-      'hover:shadow-[0px_8px_40px_0px_rgba(0,85,255,0.7),inset_0px_0px_10px_1px_rgba(255,255,255,0.3),0px_0px_0px_5px_rgba(0,85,255,0.2)]',
-      'focus:ring-blue-500',
+      'bg-primary text-white border-[3px] border-solid border-white/15',
+      'shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)]',
+      'hover:shadow-[0px_8px_40px_0px_rgba(139,92,246,0.7),inset_0px_0px_10px_1px_rgba(255,255,255,0.3),0px_0px_0px_5px_rgba(139,92,246,0.2)]',
+      'focus:ring-primary',
       'active:scale-[0.98]'
     ),
     
     secondary: clsx(
       'bg-transparent border-2 border-primary font-medium',
       isDark 
-        ? 'text-white border-primary hover:border-secondary hover:bg-blue-600/20' 
-        : 'text-primary border-primary hover:border-secondary hover:bg-blue-100/50',
-      'focus:ring-blue-500',
+        ? 'text-white border-primary hover:border-secondary hover:bg-primary/20' 
+        : 'text-primary border-primary hover:border-secondary hover:bg-primary/10',
+      'focus:ring-primary',
       'active:scale-[0.98]'
     ),
     

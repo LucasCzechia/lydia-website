@@ -11,7 +11,7 @@ export default function PrivacyHeader({ botName, isDark, variants }) {
         href="/settings"
         className={clsx(
           "inline-flex items-center mb-4 transition-colors",
-          isDark ? "text-gray-400 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"
+          isDark ? "text-gray-400 hover:text-secondary" : "text-gray-600 hover:text-primary"
         )}
       >
         <ArrowLeft size={16} className="mr-1" />

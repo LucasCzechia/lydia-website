@@ -28,13 +28,13 @@ export default function ThankYouSection({ botName, isDark, variants }) {
     "border-[2px] border-solid",
     "transition-all duration-200 ease-out",
     isDark 
-      ? "bg-[#0055FF] border-white/15 text-white shadow-[0px_4px_20px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)]" 
-      : "bg-[#0055FF] border-blue-400/20 text-white shadow-[0px_4px_20px_0px_rgba(0,85,255,0.3),0px_0px_0px_1px_rgba(0,85,255,0.1)]"
+      ? "bg-[#8B5CF6] border-white/15 text-white shadow-[0px_4px_20px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)]" 
+      : "bg-[#8B5CF6] border-blue-400/20 text-white shadow-[0px_4px_20px_0px_rgba(139,92,246,0.3),0px_0px_0px_1px_rgba(139,92,246,0.1)]"
   );
   
   const hoverBoxShadow = isDark
-    ? "0px 8px 30px 0px rgba(0,85,255,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px 3px rgba(0,85,255,0.2)"
-    : "0px 8px 30px 0px rgba(0,85,255,0.5), inset 0px 0px 5px 1px rgba(255,255,255,0.5), 0px 0px 0px 3px rgba(0,85,255,0.2)";
+    ? "0px 8px 30px 0px rgba(139,92,246,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px 3px rgba(139,92,246,0.2)"
+    : "0px 8px 30px 0px rgba(139,92,246,0.5), inset 0px 0px 5px 1px rgba(255,255,255,0.5), 0px 0px 0px 3px rgba(139,92,246,0.2)";
 
   return (
     <motion.div variants={variants} className="mb-8">

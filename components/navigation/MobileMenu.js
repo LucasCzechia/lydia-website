@@ -120,8 +120,8 @@ export default function MobileMenu({ menuGroups, router, onClose }) {
         <motion.div 
           className="absolute inset-0 w-full h-full opacity-20"
           style={{
-            background: `radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.4) 0%, transparent 70%), 
-                       radial-gradient(circle at 80% 80%, rgba(29, 78, 216, 0.3) 0%, transparent 70%)`
+            background: `radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.4) 0%, transparent 70%), 
+                       radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.3) 0%, transparent 70%)`
           }}
         />
         
@@ -229,7 +229,7 @@ export default function MobileMenu({ menuGroups, router, onClose }) {
                     }
                   }}
                 >
-                  <ExternalLink size={20} className="mr-3 text-blue-500" />
+                  <ExternalLink size={20} className="mr-3 text-primary" />
                 </motion.div>
                 <span className="font-medium text-gray-800 dark:text-gray-300">Add to Discord</span>
                 <ChevronRight size={16} className="ml-auto" />
@@ -262,7 +262,7 @@ export default function MobileMenu({ menuGroups, router, onClose }) {
                     }
                   }}
                 >
-                  <MessageSquare size={20} className="mr-3 text-blue-500" />
+                  <MessageSquare size={20} className="mr-3 text-primary" />
                 </motion.div>
                 <span className="font-medium text-gray-800 dark:text-gray-300">Support Server</span>
                 <ChevronRight size={16} className="ml-auto" />

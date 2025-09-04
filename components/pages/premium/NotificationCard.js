@@ -43,7 +43,7 @@ const NotificationCard = ({
 
   const AnimatedBadge = () => (
     <motion.div
-      className="relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden bg-blue-950/50 backdrop-blur-lg border-blue-700/30"
+      className="relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden bg-primary/50 backdrop-blur-lg border-primary/30"
       whileHover={{ scale: 1.05 }}
     >
       <AnimatedBulletPoint />
@@ -66,7 +66,7 @@ const NotificationCard = ({
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-0.5"
         style={{
-          background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+          background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
         }}
         animate={{
           opacity: [0.5, 1, 0.5]
@@ -86,7 +86,7 @@ const NotificationCard = ({
       variants={variants}
       whileHover={{
         scale: 1.02,
-        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(59, 130, 246, 0.3)",
+        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(139, 92, 246, 0.3)",
         transition: { duration: 0.3, ease: "easeOut" }
       }}
       whileTap={{ scale: 0.98 }}
@@ -156,9 +156,9 @@ const NotificationCard = ({
 
         <Link href={discordSupportUrl} passHref legacyBehavior>
           <motion.a
-            className="inline-flex items-center justify-center text-base sm:text-lg font-medium px-8 py-3 h-12 sm:h-auto rounded-[10px] border-[3px] border-solid border-white/15 bg-[#0055FF] text-white shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)] transition-all duration-200 ease-out"
+            className="inline-flex items-center justify-center text-base sm:text-lg font-medium px-8 py-3 h-12 sm:h-auto rounded-[10px] border-[3px] border-solid border-white/15 bg-[#8B5CF6] text-white shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)] transition-all duration-200 ease-out"
             whileHover={{
-              boxShadow: "0px 8px 40px 0px rgba(0,85,255,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px_5px_rgba(0,85,255,0.2)",
+              boxShadow: "0px 8px 40px 0px rgba(139,92,246,0.7), inset 0px 0px 10px 1px rgba(255,255,255,0.3), 0px 0px 0px_5px_rgba(139,92,246,0.2)",
               scale: 1.05,
               y: -2
             }}
@@ -207,7 +207,7 @@ const NotificationCard = ({
       <motion.div
         className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         style={{ 
-          background: 'linear-gradient(90deg, rgba(59, 130, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(59, 130, 246, 0) 100%)' 
+          background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(59, 130, 246) 30%, rgb(147, 197, 253) 50%, rgb(59, 130, 246) 70%, rgba(139, 92, 246, 0) 100%)' 
         }}
       />
     </motion.div>

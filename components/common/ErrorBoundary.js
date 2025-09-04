@@ -124,7 +124,7 @@ class ErrorBoundary extends React.Component {
             <div className="space-y-3 mb-6">
               <button
                 onClick={this.handleRetry}
-                className="w-full flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="w-full flex items-center justify-center space-x-2 bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                 aria-label="Try to reload this component"
               >
                 <RefreshCw size={16} />

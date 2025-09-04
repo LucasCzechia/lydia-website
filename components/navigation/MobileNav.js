@@ -203,8 +203,8 @@ export default function MobileNav() {
           <motion.div 
             className="absolute inset-0 w-full h-full opacity-20"
             style={{
-              background: `radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.4) 0%, transparent 70%), 
-                         radial-gradient(circle at 80% 80%, rgba(29, 78, 216, 0.3) 0%, transparent 70%)`
+              background: `radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.4) 0%, transparent 70%), 
+                         radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.3) 0%, transparent 70%)`
             }}
           />
         </div>
@@ -254,7 +254,7 @@ export default function MobileNav() {
                 aria-label="Change theme"
                 whileHover={{ 
                   scale: 1.05,
-                  backgroundColor: isThemeDropdownOpen ? "rgba(37, 99, 235, 0.1)" : undefined
+                  backgroundColor: isThemeDropdownOpen ? "rgba(139, 92, 246, 0.1)" : undefined
                 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ 
@@ -286,7 +286,7 @@ export default function MobileNav() {
                 className={clsx(buttonStyles, "bg-primary hover:bg-secondary text-white")}
                 whileHover={{ 
                   scale: 1.05,
-                  boxShadow: "0 4px 12px rgba(37, 99, 235, 0.25)"
+                  boxShadow: "0 4px 12px rgba(139, 92, 246, 0.25)"
                 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ 
@@ -311,7 +311,7 @@ export default function MobileNav() {
                     aria-label="User menu"
                     whileHover={{ 
                       scale: 1.05,
-                      borderColor: "rgba(37, 99, 235, 0.6)"
+                      borderColor: "rgba(139, 92, 246, 0.6)"
                     }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ 
@@ -341,12 +341,12 @@ export default function MobileNav() {
                   onClick={() => router.push('/login')}
                   className={clsx(
                     buttonStyles,
-                    "bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl"
+                    "bg-accent hover:bg-accent/90 text-white shadow-lg hover:shadow-xl"
                   )}
                   aria-label="Sign In"
                   whileHover={{ 
                     scale: 1.05,
-                    boxShadow: "0 4px 12px rgba(34, 197, 94, 0.25)"
+                    boxShadow: "0 4px 12px rgba(244, 114, 182, 0.25)"
                   }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ 
@@ -428,8 +428,8 @@ export default function MobileNav() {
           <motion.div 
             className="absolute inset-0 w-full h-full opacity-20"
             style={{
-              background: `radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.4) 0%, transparent 70%), 
-                         radial-gradient(circle at 80% 20%, rgba(29, 78, 216, 0.3) 0%, transparent 70%)`
+              background: `radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.4) 0%, transparent 70%), 
+                         radial-gradient(circle at 80% 20%, rgba(244, 114, 182, 0.3) 0%, transparent 70%)`
             }}
           />
         </div>

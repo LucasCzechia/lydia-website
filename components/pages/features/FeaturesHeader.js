@@ -15,8 +15,8 @@ export default function FeaturesHeader({ variants }) {
         className={clsx(
           "relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden",
           isDark 
-            ? "bg-blue-950/50 backdrop-blur-lg border-blue-700/30"
-            : "bg-blue-100/70 backdrop-blur-lg border-blue-300/50"
+            ? "bg-primary/50 backdrop-blur-lg border-primary/30"
+            : "bg-primary/70 backdrop-blur-lg border-primary/50"
         )}
         variants={variants}
       >
@@ -30,7 +30,7 @@ export default function FeaturesHeader({ variants }) {
         <div
           className="absolute bottom-0 left-0 right-0 h-0.5"
           style={{
-            background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+            background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)'
           }}
         />
       </motion.div>

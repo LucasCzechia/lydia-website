@@ -49,12 +49,12 @@ export default function BetaTestersList({ betaTesters, botName, isDark, variants
                 className={clsx(
                   "flex items-center space-x-3 p-2 rounded-lg border",
                   isDark 
-                    ? "bg-blue-900/10 border-blue-500/20 hover:border-blue-500/40" 
-                    : "bg-blue-50 border-blue-200 hover:border-blue-300"
+                    ? "bg-primary/10 border-primary/20 hover:border-primary/40" 
+                    : "bg-blue-50 border-blue-200 hover:border-primary"
                 )}
                 whileHover={{ scale: 1.02, y: -1 }}
               >
-                <span className="text-blue-500">
+                <span className="text-primary">
                   <UserCheck size={18} />
                 </span>
                 <div>

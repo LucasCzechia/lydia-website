@@ -55,7 +55,7 @@ export default function DiscordDropdown({ onClose }) {
           variants={itemVariants}
           whileHover={{ 
             x: 4,
-            backgroundColor: "rgba(37, 99, 235, 0.1)",
+            backgroundColor: "rgba(139, 92, 246, 0.1)",
             transition: { 
               type: "spring", 
               stiffness: 500, 
@@ -74,7 +74,7 @@ export default function DiscordDropdown({ onClose }) {
               }
             }}
           >
-            <ExternalLink size={18} className="mr-3 text-blue-500" />
+            <ExternalLink size={18} className="mr-3 text-primary" />
           </motion.div>
           <div>
             <p className="font-medium text-gray-800 dark:text-gray-300">Add to Discord</p>
@@ -89,7 +89,7 @@ export default function DiscordDropdown({ onClose }) {
           variants={itemVariants}
           whileHover={{ 
             x: 4,
-            backgroundColor: "rgba(37, 99, 235, 0.1)",
+            backgroundColor: "rgba(139, 92, 246, 0.1)",
             transition: { 
               type: "spring", 
               stiffness: 500, 
@@ -108,7 +108,7 @@ export default function DiscordDropdown({ onClose }) {
               }
             }}
           >
-            <MessageSquare size={18} className="mr-3 text-blue-500" />
+            <MessageSquare size={18} className="mr-3 text-primary" />
           </motion.div>
           <div>
             <p className="font-medium text-gray-800 dark:text-gray-300">Support Server</p>

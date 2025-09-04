@@ -14,7 +14,7 @@ const StatusNotification = ({
   const getStatusIcon = () => {
     switch (status?.type) {
       case 'loading':
-        return <Loader2 size={20} className="animate-spin text-blue-500" />;
+        return <Loader2 size={20} className="animate-spin text-secondary" />;
       case 'success':
         return <Check size={20} className="text-green-500" />;
       case 'error':
@@ -22,7 +22,7 @@ const StatusNotification = ({
       case 'warning':
         return <AlertTriangle size={20} className="text-yellow-500" />;
       default:
-        return <Info size={20} className="text-blue-500" />;
+        return <Info size={20} className="text-secondary" />;
     }
   };
 
@@ -35,8 +35,8 @@ const StatusNotification = ({
       success: isDark ? "bg-green-900/20 border-green-500/30" : "bg-green-50 border-green-200",
       error: isDark ? "bg-red-900/20 border-red-500/30" : "bg-red-50 border-red-200",
       warning: isDark ? "bg-yellow-900/20 border-yellow-500/30" : "bg-yellow-50 border-yellow-200",
-      info: isDark ? "bg-blue-900/20 border-blue-500/30" : "bg-blue-50 border-blue-200",
-      loading: isDark ? "bg-blue-900/20 border-blue-500/30" : "bg-blue-50 border-blue-200"
+      info: isDark ? "bg-secondary/10 border-secondary/30" : "bg-cyan-50 border-cyan-200",
+      loading: isDark ? "bg-secondary/10 border-secondary/30" : "bg-cyan-50 border-cyan-200"
     };
     
     return clsx(baseClasses, typeClasses[status.type], className);

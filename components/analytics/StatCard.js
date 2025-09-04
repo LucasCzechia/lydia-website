@@ -106,7 +106,7 @@ const StatCard = ({
             </div>
           )}
         </div>
-        <div className={clsx("p-3 rounded-full flex-shrink-0", isDark ? "bg-blue-900/30" : "bg-blue-50")}>
+        <div className={clsx("p-3 rounded-full flex-shrink-0", isDark ? "bg-primary/30" : "bg-blue-50")}>
           {Icon && <Icon size={24} className={color} />}
         </div>
       </div>

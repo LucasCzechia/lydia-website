@@ -38,8 +38,8 @@ export default function InspirationSection({ inspirationText, isDark, variants }
           <div className="flex items-start">
             <motion.div
               className={clsx(
-                "text-blue-500 flex-shrink-0 mr-3 mt-1 p-2 rounded-full",
-                isDark ? "bg-blue-900/20" : "bg-blue-100/70"
+                "text-primary flex-shrink-0 mr-3 mt-1 p-2 rounded-full",
+                isDark ? "bg-primary/20" : "bg-primary/70"
               )}
               whileHover={{ 
                 scale: 1.1,

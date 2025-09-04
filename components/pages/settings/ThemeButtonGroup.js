@@ -14,7 +14,7 @@ export default function ThemeButtonGroup({ theme, setTheme, preferencesEnabled, 
     }
     
     if (isActive) {
-      return 'bg-[#0055FF] text-white border border-white/15 shadow-[0px_0px_15px_0px_rgba(0,85,255,0.5)]';
+      return 'bg-[#8B5CF6] text-white border border-white/15 shadow-[0px_0px_15px_0px_rgba(139,92,246,0.5)]';
     }
     
     return isDark

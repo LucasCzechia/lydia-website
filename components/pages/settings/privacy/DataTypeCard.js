@@ -42,12 +42,12 @@ export default function DataTypeCard({
             "rounded-full p-2.5 flex-shrink-0 mt-1",
             dataType.alwaysEnabled 
               ? isDark ? "bg-yellow-500/10" : "bg-yellow-100" 
-              : isDark ? "bg-blue-900/30" : "bg-blue-50"
+              : isDark ? "bg-primary/30" : "bg-blue-50"
           )}>
             {dataType.alwaysEnabled ? (
               <AlertTriangle size={16} className={isDark ? "text-yellow-500" : "text-yellow-600"} />
             ) : (
-              <Icon size={16} className="text-blue-500" />
+              <Icon size={16} className="text-primary" />
             )}
           </div>
 
@@ -67,7 +67,7 @@ export default function DataTypeCard({
                   isChecked
                     ? (dataType.alwaysEnabled 
                         ? isDark ? "bg-gray-500" : "bg-gray-400" 
-                        : "bg-blue-500")
+                        : "bg-primary")
                     : isDark ? "bg-gray-600" : "bg-gray-300",
                   dataType.alwaysEnabled ? "cursor-not-allowed opacity-80" : "cursor-pointer"
                 )}

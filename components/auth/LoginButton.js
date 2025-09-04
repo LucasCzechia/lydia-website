@@ -20,9 +20,9 @@ export default function LoginButton({ variant = 'primary', size = 'md', classNam
 
   const variantClasses = {
     primary: clsx(
-      'bg-[#0055FF] text-white border border-blue-500/20',
+      'bg-primary text-white border border-primary/20',
       'shadow-lg hover:shadow-xl',
-      'hover:bg-[#0048CC]'
+      'hover:bg-primary/90'
     ),
     secondary: clsx(
       'bg-transparent border border-gray-300 font-medium',
@@ -54,7 +54,7 @@ export default function LoginButton({ variant = 'primary', size = 'md', classNam
       className={clsx(
         'inline-flex items-center justify-center font-medium rounded-lg',
         'transition-all duration-200 ease-out',
-        'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500',
+        'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary',
         'disabled:opacity-50 disabled:cursor-not-allowed',
         'relative overflow-hidden',
         sizeClasses[size],

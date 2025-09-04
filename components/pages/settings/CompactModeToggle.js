@@ -22,7 +22,7 @@ export default function CompactModeToggle({ compactMode, handleChange, preferenc
           !preferencesEnabled
             ? isDark ? "bg-gray-800/50" : "bg-gray-300" // Disabled background
             : compactMode
-              ? "bg-[#0055FF]" // Enabled and checked
+              ? "bg-[#8B5CF6]" // Enabled and checked
               : isDark ? "bg-gray-700" : "bg-gray-400" // Enabled and unchecked
         )}>
           <motion.span

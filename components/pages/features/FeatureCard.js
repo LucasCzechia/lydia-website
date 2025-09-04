@@ -79,7 +79,7 @@ export default function FeatureCard({ feature }) {
               className={clsx(
                 "px-2 py-0.5 text-xs font-medium text-white rounded-lg",
                 "border-2 border-white/15 backdrop-filter backdrop-blur-sm",
-                isPro ? "bg-[#0055FF]" : "bg-[#0055FF]"
+                isPro ? "bg-[#8B5CF6]" : "bg-[#8B5CF6]"
               )}
             >
               {badgeType}
@@ -125,7 +125,7 @@ export default function FeatureCard({ feature }) {
 
       <div
         className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ background: `linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)` }}
+        style={{ background: `linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(139, 92, 246) 50%, rgba(0, 85, 255, 0) 100%)` }}
       />
 
       <motion.div

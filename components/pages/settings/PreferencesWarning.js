@@ -28,7 +28,7 @@ export default function PreferencesWarning({ isDark, variants }) {
           href="/settings/privacy"
           className={clsx(
             "text-sm inline-flex items-center hover:underline",
-            isDark ? "text-blue-400" : "text-blue-600"
+            isDark ? "text-secondary" : "text-primary"
           )}
         >
           Enable Site Preferences

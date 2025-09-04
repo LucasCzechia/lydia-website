@@ -17,7 +17,7 @@ export default function FeatureSection() {
       title: "Instant Chatbot",
       shortDescription: "AI assistant powered by Gemini.",
       description: `Add ${botName} for an instant AI assistant powered by Google's Gemini 2.5 Flash. Engages users, answers questions, and more.`,
-      color: "text-blue-400",
+      color: "text-secondary",
       badgeType: "PRO"
     },
     {
@@ -78,17 +78,17 @@ export default function FeatureSection() {
     "px-8 py-3 h-12 sm:h-auto",
     "rounded-[10px]",
     "border-[3px] border-solid border-white/15",
-    "shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)]",
+    "shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)]",
     "transition-all duration-200 ease-out"
   );
 
   const primaryButtonClasses = clsx(
     buttonBaseClasses,
-    "bg-[#0055FF]",
+    "bg-[#8B5CF6]",
     "text-white"
   );
 
-  const hoverBoxShadow = "0px_8px_40px_0px_rgba(0,85,255,0.7), inset_0px_0px_10px_1px_rgba(255,255,255,0.3), 0px_0px_0px_5px_rgba(0,85,255,0.2)";
+  const hoverBoxShadow = "0px_8px_40px_0px_rgba(139,92,246,0.7), inset_0px_0px_10px_1px_rgba(255,255,255,0.3), 0px_0px_0px_5px_rgba(139,92,246,0.2)";
 
   return (
     <section className="py-12 md:py-16 px-4 md:px-0 relative">

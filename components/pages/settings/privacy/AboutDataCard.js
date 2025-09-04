@@ -52,7 +52,7 @@ export default function AboutDataCard({ botName, isDark, variants }) {
           href={getConfig('urls.nav.privacy')}
           className={clsx(
             "inline-flex items-center text-sm hover:underline",
-            isDark ? "text-blue-400" : "text-blue-600"
+            isDark ? "text-secondary" : "text-primary"
           )}
         >
           Read our full Privacy Policy

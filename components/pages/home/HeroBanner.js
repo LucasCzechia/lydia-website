@@ -67,7 +67,7 @@ export default function HeroBanner() {
           <div 
             className="absolute inset-0 rounded-full blur-xl opacity-30 animate-pulse"
             style={{
-              background: 'radial-gradient(circle, rgba(37, 99, 235, 0.4) 0%, transparent 70%)'
+              background: 'radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 70%)'
             }}
             aria-hidden="true"
           />
@@ -79,8 +79,8 @@ export default function HeroBanner() {
         className={clsx(
           "relative inline-flex items-center mb-6 rounded-full px-4 py-1.5 border overflow-hidden",
           isDark 
-            ? "bg-blue-950/50 backdrop-blur-lg border-blue-700/30"
-            : "bg-blue-100/70 backdrop-blur-lg border-blue-300/50"
+            ? "bg-primary/10 backdrop-blur-lg border-primary/30"
+            : "bg-primary/10 backdrop-blur-lg border-primary/50"
         )}
         role="banner"
         aria-label={`Powered by ${aiModel}`}
@@ -95,7 +95,7 @@ export default function HeroBanner() {
         <div
           className="absolute bottom-0 left-0 right-0 h-0.5"
           style={{
-            background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+            background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
           }}
           aria-hidden="true"
         />
@@ -127,7 +127,7 @@ export default function HeroBanner() {
       >
         <Link href={discordInviteUrl} passHref legacyBehavior>
           <motion.a
-            className="btn-primary flex items-center justify-center w-full h-12 sm:h-auto text-base sm:text-lg px-8 py-3 bg-[#0055FF] text-white border-[3px] border-solid border-white/15 shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)] transition-all duration-200 ease-out rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="btn-primary flex items-center justify-center w-full h-12 sm:h-auto text-base sm:text-lg px-8 py-3 bg-primary text-white border-[3px] border-solid border-white/15 shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)] transition-all duration-200 ease-out rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             variants={animationPresets.button}
             whileHover="whileHover"
             whileTap="whileTap"
@@ -144,8 +144,8 @@ export default function HeroBanner() {
             className={clsx(
               "btn-secondary flex items-center justify-center w-full h-12 sm:h-auto text-base sm:text-lg px-8 py-3 bg-transparent font-medium rounded-full transition-all border focus:outline-none focus:ring-2 focus:ring-offset-2",
               isDark
-                ? "border-primary hover:border-secondary text-white hover:bg-blue-600/20 focus:ring-blue-500"
-                : "border-primary hover:border-secondary text-primary hover:bg-blue-100/50 focus:ring-blue-500"
+                ? "border-primary hover:border-secondary text-white hover:bg-primary/20 focus:ring-primary"
+                : "border-primary hover:border-secondary text-primary hover:bg-primary/10 focus:ring-primary"
             )}
             variants={animationPresets.button}
             whileHover="whileHover"

@@ -5,36 +5,42 @@
 :root {
   --background: #FFFFFF;
   --foreground: #0F172A; /* Enhanced contrast from #121212 */
-  --primary: #2563EB;
-  --secondary: #1D4ED8;
-  --card: #F8FAFC; /* Enhanced from #F5F5F5 */
-  --card-hover: #E2E8F0; /* Enhanced from #EEEEEE */
-  --card-border: #64748B; /* Enhanced contrast from #9CA3AF */
+  --primary: #8B5CF6; /* Purple to match Lylia's hair */
+  --secondary: #06B6D4; /* Cyan to match UI elements */
+  --accent: #F472B6; /* Pink to match geometric shapes */
+  --card: #FAF7FF; /* Light purple tint */
+  --card-hover: #F3E8FF; /* Soft purple hover */
+  --card-border: #7C3AED; /* Purple border */
   --gray-300: #1E293B; /* Enhanced contrast from #303030 */
   --gray-400: #0F172A; /* Enhanced contrast from #222222 */
   --gray-500: #020617; /* Enhanced contrast from #171717 */
   --gray-600: #475569; /* Added for better mid-tone contrast */
   --gray-700: #334155; /* Added for better mid-tone contrast */
-  --primary-rgb: 37, 99, 235;
+  --primary-rgb: 139, 92, 246; /* Purple RGB */
+  --secondary-rgb: 6, 182, 212; /* Cyan RGB */
+  --accent-rgb: 244, 114, 182; /* Pink RGB */
   --success: #059669;
-  --warning: #D97706;
+  --warning: #F59E0B; /* Orange to match warm tones */
   --error: #DC2626;
 }
 
 .dark {
   --background: #000000;
   --foreground: #F8FAFC; /* Enhanced contrast from #FFFFFF */
-  --primary: #3B82F6; /* Slightly lighter for better contrast */
-  --secondary: #2563EB;
-  --card: #0F172A; /* Enhanced from #111111 */
-  --card-hover: #1E293B; /* Enhanced from #1A1A1A */
-  --card-border: #475569; /* Enhanced contrast from #333333 */
+  --primary: #A78BFA; /* Lighter purple for dark mode */
+  --secondary: #22D3EE; /* Brighter cyan for dark mode */
+  --accent: #FB7185; /* Coral-pink for dark mode */
+  --card: #1E1B4B; /* Deep purple-blue */
+  --card-hover: #312E81; /* Slightly lighter purple */
+  --card-border: #7C3AED; /* Violet border */
   --gray-300: #E2E8F0; /* Better contrast than #D1D5DB */
   --gray-400: #CBD5E1; /* Better contrast than #9CA3AF */
   --gray-500: #94A3B8; /* Better contrast than #6B7280 */
   --gray-600: #64748B; /* Added for consistency */
   --gray-700: #475569; /* Added for consistency */
-  --primary-rgb: 59, 130, 246;
+  --primary-rgb: 167, 139, 250; /* Light purple RGB */
+  --secondary-rgb: 34, 211, 238; /* Bright cyan RGB */
+  --accent-rgb: 251, 113, 133; /* Coral-pink RGB */
   --success: #10B981;
   --warning: #F59E0B;
   --error: #EF4444;

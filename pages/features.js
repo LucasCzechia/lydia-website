@@ -49,11 +49,11 @@ export default function Features() {
     }
   };
 
-  const buttonBaseClasses = "inline-flex items-center justify-center text-base sm:text-lg font-medium px-8 py-3 h-12 sm:h-auto rounded-[10px] border-[3px] border-solid border-white/15 shadow-[0px_8px_40px_0px_rgba(0,85,255,0.5),0px_0px_0px_1px_rgba(0,85,255,0.12)] transition-all duration-200 ease-out";
+  const buttonBaseClasses = "inline-flex items-center justify-center text-base sm:text-lg font-medium px-8 py-3 h-12 sm:h-auto rounded-[10px] border-[3px] border-solid border-white/15 shadow-[0px_8px_40px_0px_rgba(139,92,246,0.5),0px_0px_0px_1px_rgba(139,92,246,0.12)] transition-all duration-200 ease-out";
 
-  const primaryButtonClasses = `${buttonBaseClasses} bg-[#0055FF] text-white`;
+  const primaryButtonClasses = `${buttonBaseClasses} bg-[#8B5CF6] text-white`;
 
-  const hoverBoxShadow = "0px_8px_40px_0px_rgba(0,85,255,0.7), inset_0px_0px_10px_1px_rgba(255,255,255,0.3), 0px_0px_0px_5px_rgba(0,85,255,0.2)";
+  const hoverBoxShadow = "0px_8px_40px_0px_rgba(139,92,246,0.7), inset_0px_0px_10px_1px_rgba(255,255,255,0.3), 0px_0px_0px_5px_rgba(139,92,246,0.2)";
 
   if (!mounted) {
     return (
@@ -92,8 +92,8 @@ export default function Features() {
                   className={clsx(
                     "relative inline-flex items-center mb-6 rounded-full px-5 py-2 border overflow-hidden",
                     isDark 
-                      ? "bg-blue-950/50 backdrop-blur-lg border-blue-700/30"
-                      : "bg-blue-100/70 backdrop-blur-lg border-blue-300/50"
+                      ? "bg-primary/50 backdrop-blur-lg border-primary/30"
+                      : "bg-primary/70 backdrop-blur-lg border-primary/50"
                   )}
                   variants={itemVariants}
                 >
@@ -107,7 +107,7 @@ export default function Features() {
                   <div
                     className="absolute bottom-0 left-0 right-0 h-0.5"
                     style={{
-                      background: 'linear-gradient(90deg, rgba(0, 85, 255, 0) 0%, rgb(0, 85, 255) 50%, rgba(0, 85, 255, 0) 100%)'
+                      background: 'linear-gradient(90deg, rgba(139, 92, 246, 0) 0%, rgb(139, 92, 246) 50%, rgba(139, 92, 246, 0) 100%)'
                     }}
                   />
                 </motion.div>
@@ -129,7 +129,7 @@ export default function Features() {
                   )}
                   variants={itemVariants}
                 >
-                  Discover the comprehensive AI capabilities that make {botName} the most advanced Discord bot for your community.
+                  Discover the powerful image generation and editing capabilities powered by Google's Gemini 2.5 Flash Image (Nano Banana) model.
                 </motion.p>
               </div>
               
@@ -158,7 +158,7 @@ export default function Features() {
           <Notice 
             title="Ready to Transform Your Server?"
             subtitle=""
-            description={`Join thousands of Discord communities already using ${botName} to enhance their server experience with cutting-edge AI capabilities.`}
+            description={`Join Discord communities using ${botName} for professional-grade image generation and editing with Gemini 2.5 Flash Image technology.`}
             secondaryText="Join our Discord"
             secondaryUrl="/contact"
           />

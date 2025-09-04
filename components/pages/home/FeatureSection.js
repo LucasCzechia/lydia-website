@@ -12,38 +12,38 @@ export default function FeatureSection() {
 
   const features = [
     {
-      id: "chatbot",
-      icon: "Bot",
-      title: "Instant Chatbot",
-      shortDescription: "AI assistant powered by Gemini.",
-      description: `Add ${botName} for an instant AI assistant powered by Google's Gemini 2.5 Flash. Engages users, answers questions, and more.`,
+      id: "image-generation",
+      icon: "Image",
+      title: "AI Image Generation",
+      shortDescription: "Create stunning visuals with text prompts.",
+      description: `Generate high-quality images using Google's Gemini 2.5 Flash Image model. Simply describe what you want and watch ${botName} bring your vision to life.`,
       color: "text-secondary",
-      badgeType: "PRO"
+      badgeType: "NANO BANANA"
     },
     {
-      id: "intelligence",
-      icon: "Brain",
-      title: "Advanced Intelligence",
-      shortDescription: "Cutting-edge AI for the agentic era.",
-      description: "Experience Google's cutting-edge AI, designed for complex tasks and natural interactions in the modern agentic era.",
+      id: "image-editing",
+      icon: "Edit",
+      title: "Advanced Image Editing",
+      shortDescription: "Professional-grade editing with natural language.",
+      description: "Transform images with simple text commands. Remove backgrounds, change colors, add objects, or blend multiple images seamlessly.",
       color: "text-purple-400",
       badgeType: "NEW"
     },
     {
-      id: "privacy",
-      icon: "Shield",
-      title: "Privacy Focused",
-      shortDescription: "Your data remains secure.",
-      description: "Your data remains secure. All processing prioritizes privacy and adheres to strict data handling policies.",
-      color: "text-red-400",
-      badgeType: "NEW"
+      id: "character-consistency",
+      icon: "Users",
+      title: "Character Consistency",
+      shortDescription: "Maintain characters across edits.",
+      description: "Keep characters and objects consistent across multiple generations and edits, perfect for storytelling and content creation.",
+      color: "text-accent",
+      badgeType: "PRO"
     },
     {
-      id: "conversation",
-      icon: "MessageSquare",
-      title: "Natural Conversations",
-      shortDescription: "Fluid, human-like interactions.",
-      description: "Enjoy fluid, human-like interactions with deep context understanding, making conversations feel natural and intuitive.",
+      id: "multi-image-blend",
+      icon: "Layers",
+      title: "Multi-Image Blending",
+      shortDescription: "Combine multiple images into one scene.",
+      description: "Upload multiple reference images and blend them together to create entirely new compositions and scenes with professional results.",
       color: "text-green-400",
       badgeType: "NEW"
     }
@@ -102,7 +102,7 @@ export default function FeatureSection() {
         <SectionHeader
           tagline="Features"
           title="Supercharged Features"
-          subtitle={`${botName} combines cutting-edge AI with seamless Discord integration to transform your server experience.`}
+          subtitle={`${botName} harnesses Google's Gemini 2.5 Flash Image (Nano Banana) to deliver professional-grade image generation and editing directly in Discord.`}
           variants={itemVariants}
           center={true}
         />

@@ -8,7 +8,7 @@ const config = {
     nameWithoutSymbol: botNameWithoutSymbol,
     version: "1.3.2",
     tagline: `Create and edit stunning images in Discord. Powered by Google's Gemini 2.5 Flash Image (Nano Banana).`,
-    description: `Powerful AI Discord Bot powered by Google's ${aiModel} model. Smart conversation, powerful, and more!`,
+    description: `Lylia - Powerful AI Discord Bot powered by Google's Gemini 2.5 Flash Image model. Create, edit, and transform images with natural language commands!`,
     releaseDate: "2025-04-10",
     aiModel: aiModel
   },

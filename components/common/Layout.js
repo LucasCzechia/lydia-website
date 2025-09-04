@@ -27,7 +27,7 @@ export default function Layout({ children, title, description }) {
   
   const domain = process.env.NEXT_PUBLIC_VERCEL_URL || getConfig('urls.website', 'lydia.app').replace(/^https?:\/\//, '');
   const canonicalUrl = `https://${domain}${router.pathname}`;
-  const botLogoUrl = `https://${domain}${getConfig('branding.images.logo', '/images/lydia.webp')}`;
+  const botLogoUrl = `https://${domain}${getConfig('branding.images.logo', '/images/lylia.webp')}`;
   const faviconUrl = getConfig('branding.images.favicon', '/images/favicon/favicon.ico');
 
   useEffect(() => {

@@ -167,11 +167,11 @@ const config = {
       secondary: "#1D4ED8"
     },
     images: {
-      logo: "/images/lydia.webp",
-      logoFull: "/images/lydia-full.webp",
+      logo: "/images/lylia.webp",
+      logoFull: "/images/lylia-full.webp",
       favicon: "/images/favicon/favicon.ico",
       ogImage: "/images/og-image.png",
-      logoAlt: "Lydia Logo",
+      logoAlt: "Lylia Logo",
       placeholders: {
         user: "https://api.placeholder.com/40/777/fff?text=User"
       }

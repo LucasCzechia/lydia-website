@@ -28,7 +28,7 @@ export default function TabletNav() {
   const userRef = useRef(null);
   const discordRef = useRef(null);
   
-  const logoPath = getConfig('branding.images.logo', '/images/lydia.webp');
+  const logoPath = getConfig('branding.images.logo', '/images/lylia.webp');
   
   useEffect(() => {
     setMounted(true);

@@ -14,7 +14,7 @@ export default function HeroBanner() {
   const botNameWithoutSymbol = getBotName(false);
   const botTagline = getConfig('bot.tagline', "The most intelligent Discord AI bot, built for the agentic era.");
   const discordInviteUrl = getConfig('urls.discord.invite', '#');
-  const logoPath = getConfig('branding.images.logo', '/images/lydia.webp');
+  const logoPath = getConfig('branding.images.logo', '/images/lylia.webp');
   const aiModel = getConfig('bot.aiModel', 'Gemini 2.5 Flash');
   const featuresUrl = getConfig('urls.nav.features', '#');
   const isDark = resolvedTheme === 'dark';

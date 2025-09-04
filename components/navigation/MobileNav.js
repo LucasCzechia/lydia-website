@@ -26,7 +26,7 @@ export default function MobileNav() {
   const userButtonRef = useRef(null);
   
   const discordSupportUrl = getConfig('urls.discord.supportServer');
-  const logoPath = getConfig('branding.images.logo', '/images/lydia.webp');
+  const logoPath = getConfig('branding.images.logo', '/images/lylia.webp');
   
   useEffect(() => {
     const handleClickOutside = (event) => {

@@ -13,16 +13,16 @@ const config = {
     aiModel: aiModel
   },
   urls: {
-    website: "https://lylia.app",
+    website: "https://lydia.app",
     discord: {
-      invite: "https://discord.com/oauth2/authorize?client_id=1413482394899447858",
-      supportServer: "https://discord.gg/lylia",
-      supportServerCode: "lylia"
+      invite: "https://discord.com/oauth2/authorize?client_id=1250114494081007697",
+      supportServer: "https://discord.gg/bolt",
+      supportServerCode: "bolt"
     },
     social: {
       github: "https://github.com/lydia",
       twitter: "https://twitter.com/lydiaai",
-      discord: "https://discord.gg/lylia"
+      discord: "https://discord.gg/bolt"
     },
     nav: {
       home: "/",
